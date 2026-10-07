@@ -6,15 +6,16 @@ import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
+import css from './App.module.css';
 
 function App() {
   return (
-    <div >
+    <div className={css.appContainer}>
       {/* Sabit Üst Menü */}
       <Navbar />
 
       {/* Ana Sayfa Akış Bölümleri */}
-      <main className="overflow-hidden">
+      <main className={css.mainContent}>
         <Hero />
         <About />
         <Skills />
@@ -24,7 +25,7 @@ function App() {
       </main>
 
       {/* Alt Bilgi Alanı */}
-      <Footer />
+      <Footer className={css.footer} />
     </div>
   );
 }

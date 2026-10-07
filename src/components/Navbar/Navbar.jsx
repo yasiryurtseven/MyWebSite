@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import css from "./Navbar.module.css";
 
 const navItems = [
-  { id: "hero", label: "Ana Sayfa" },
   { id: "about", label: "Hakkımda" },
-  { id: "skills", label: "Yetenekler" },
-  { id: "education", label: "Eğitim" },
   { id: "projects", label: "Projeler" },
+  { id: "skills", label: "Yetenekler" },
   { id: "contact", label: "İletişim" },
 ];
 

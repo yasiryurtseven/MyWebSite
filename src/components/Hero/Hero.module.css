@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Tam ekran yüksekliği */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* MicroSlats arka planda kalsın ve tıklamaları engellemesin */
+.hero > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none; /* Mouse etkileşimlerinin yazılara gelmesini sağlar */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10; /* Yazıları en üste taşır */
+  max-width: 800px;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
